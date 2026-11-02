@@ -71,7 +71,7 @@ response = requests.get(
     params={
         "query": "https://www.aboutyou.fr/p/puma/baskets-basses-suede-bloom-32191359",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -195,7 +195,7 @@ response = requests.get(
     params={
         "query": "suede bloom",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
